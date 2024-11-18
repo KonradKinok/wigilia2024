@@ -9,9 +9,9 @@
 }
 
 :root {
-    --body-background: rgb(176, 196, 222);
+    --body-background: rgb(20 171 255);;
     /* header */
-    --header-background: rgb(75, 0, 130); /*Indygo */
+    --header-background: rgb(57 47 255); /*Indygo */
     --header-text-color: rgb(224, 255, 255);/*LightCyan */
     --header-text-hover-color: rgb(175, 238, 238);/*PaleTurquoise */
     --header-text-active-color: rgb(75, 0, 130);/*Indygo */
@@ -65,7 +65,7 @@
     --button-up-first-gradient: rgb(75, 0, 130);
     --button-up-second-gradient:rgb(153, 50, 204);
     /* footer */
-    --footer-background: rgb(75, 0, 130); /*Indygo */
+    --footer-background: rgb(57 47 255); /*Indygo */
     --footer-text-color: rgb(224, 255, 255);/*LightCyan */
     --footer-text-color-hover: rgb(175, 238, 238);
     --footer-address-color: rgb(86, 194, 227);

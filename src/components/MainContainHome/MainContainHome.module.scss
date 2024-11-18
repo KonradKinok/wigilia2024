@@ -1,0 +1,94 @@
+.maincontain-home-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/mainHome/tlo-home.jpg");
+    background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: right;
+
+}
+
+.maincontain-home-button {
+    font-size: 64px;
+    background-color: var(--header-background);
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: button-animation 4s infinite;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: url("../../images/mainHome/tlo-home.jpg");
+    background-size: contain;
+
+}
+
+@keyframes button-animation {
+
+    5%,
+    50% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1) rotate(-5deg);
+    }
+
+    25% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    30% {
+        transform: scale(1) rotate(-3deg);
+    }
+
+    35% {
+        transform: scale(1) rotate(2deg);
+    }
+
+    40% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+.maincontain-home-button-text {
+    color: transparent;
+    text-transform: uppercase;
+    /* Ukrycie bazowego tekstu */
+    background-clip: text;
+    /* Wycięcie tła w kształt tekstu */
+    -webkit-background-clip: text;
+    /* Wycięcie tła w kształt tekstu dla WebKit */
+    transition: background-image 0.5s ease-in-out;
+    background-size: 200%;
+    /* Upewnij się, że gradient jest odpowiednio duży */
+    background-image: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
+    /* Domyślny gradient */
+    animation: gradientChange 2s infinite;
+}
+
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
