@@ -1,0 +1,46 @@
+.custom-audio-player {
+    width: 90%;
+    /* Dopasowanie szerokości */
+    border: 2px solid #55057a;
+    /* Obrys */
+    border-radius: 10px;
+    /* Zaokrąglenia */
+    background-color: #443c3c;
+    /* Tło */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Cień */
+}
+
+// audio {
+//     display: none;
+//     /* Ukryj domyślny odtwarzacz */
+// }
+
+// .custom-audio-controls {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: #f4f4f4;
+//     padding: 10px;
+//     border: 2px solid #55057a;
+//     border-radius: 10px;
+//     width: 100%;
+//     max-width: 500px;
+// }
+
+// .play-btn,
+// .pause-btn {
+//     background: #55057a;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     padding: 5px 10px;
+//     cursor: pointer;
+// }
+
+// .progress-bar {
+//     width: 100%;
+//     margin: 0 10px;
+//     appearance: none;
+//     /* Usuwa styl natywny */
+// }

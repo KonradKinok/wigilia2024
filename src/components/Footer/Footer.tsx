@@ -16,12 +16,12 @@ export const Footer: React.FC<FooterProps> = ({ isWigiliaOpen }) => {
           <img src={footerLogoImage} alt="logoImage" width="24" />
           <img src={footerLogoText} alt="logoText" />
         </div>
+      </div>
+      <div className={scss["footer-container-text"]}>
         {isWigiliaOpen ? (
           <MusicPlayer />
         ) : (
-          <div className={scss["footer-container-text"]}>
-            <p className={scss["footer-text"]}>Wesołych Świąt!!!</p>
-          </div>
+          <p className={scss["footer-text"]}>Wesołych Świąt!!!</p>
         )}
       </div>
     </footer>
