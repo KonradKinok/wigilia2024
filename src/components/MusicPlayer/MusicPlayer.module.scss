@@ -61,12 +61,13 @@
     gap: 40px;
     justify-content: center;
     align-items: center;
+    color: rgb(48 0 187);
 }
 
 .player-btn {
     background: none;
     border: none;
-    color: white;
+    color: inherit;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
@@ -81,6 +82,11 @@
     }
 }
 
+.player-time {
+    color: inherit;
+}
+
+
 .progressBarContainer {
     width: 100%;
     height: 10px;
@@ -92,5 +98,5 @@
     width: 100%;
     height: 10px;
     border-radius: 5px;
-    background: linear-gradient(90deg, orange var(--progress, 0%), black var(--progress, 0%));
+    background: linear-gradient(90deg, rgb(48 0 187) var(--progress, 0%), black var(--progress, 0%));
 }

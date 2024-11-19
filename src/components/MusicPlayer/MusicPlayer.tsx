@@ -33,6 +33,7 @@ export const MusicPlayer: React.FC = () => {
       if (currentTime === duration) {
         setProgress(0);
         setIsPlaying(false);
+        console.log("koniec piosenki");
       }
     }
   };
@@ -77,7 +78,6 @@ export const MusicPlayer: React.FC = () => {
         // Ustaw interwał do aktualizacji postępu co 1 sekundę
         interval = setInterval(() => {
           updateProgress();
-          console.log("useEffect");
         }, 1000);
       } else {
         audio.pause();
@@ -111,7 +111,7 @@ export const MusicPlayer: React.FC = () => {
         <button className={scss["player-btn"]} onClick={toggleMute}>
           {isMute ? <FaVolumeMute size={30} /> : <FaVolumeUp size={30} />}
         </button>
-        <div>
+        <div className={scss["player-time"]}>
           <span>
             {audioRef.current
               ? formatTime(audioRef.current.currentTime)
