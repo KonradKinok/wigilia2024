@@ -123,9 +123,9 @@ export const MusicPlayer: React.FC = () => {
           </span>
         </div>
       </div>
-      <div className={scss["progressBarContainer"]}>
+      <div className={scss["player-progress-bar-container"]}>
         <div
-          className={scss["progressBar"]}
+          className={scss["player-progress-bar"]}
           style={{ "--progress": `${progress}%` } as React.CSSProperties}
           data-progress={progress}
         />
