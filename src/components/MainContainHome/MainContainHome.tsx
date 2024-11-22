@@ -1,5 +1,4 @@
 import scss from "./MainContainHome.module.scss";
-
 interface MainContainHomeProps {
   setIsWigiliaOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }

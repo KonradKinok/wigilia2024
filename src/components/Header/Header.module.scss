@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-image: url("../../images/header/tlo-header.jpg");
-    background-size: cover;
-    background-position: 0px 135px;
+    background-image: url("../../images/header/tlo-header5.jpg");
+    // background-size: cover;
+
+    background-position: 773px 578px;
+    z-index: 1;
 }
 
 .header-text {
