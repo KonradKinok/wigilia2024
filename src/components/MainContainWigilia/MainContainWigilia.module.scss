@@ -168,12 +168,11 @@
     transition: background-image 0.5s ease-in-out;
     background-size: 200%;
     /* Upewnij się, że gradient jest odpowiednio duży */
-
-    background-image: linear-gradient(90deg, hsl(228.5deg 100% 50%), hsl(266.37deg 100% 50%), hsl(0deg 100% 27.39%));
-    background-image: linear-gradient(90deg, hsl(162, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
+    text-shadow: 1px 1px 2px #f0ff00, 0 0 1em blue, 0 0 0.2em blue;
+    // background-image: linear-gradient(90deg, hsl(59.58deg 97.74% 50.4%), hsl(233.13deg 100% 24.24%), hsl(339.32deg 100% 68.65%));
 
     animation:
-        gradientChange 10s linear infinite,
+        // gradientChange 10s linear infinite,
         /* Gradient działa w nieskończoność */
         section4567-gif-animation 1s linear 27000ms 1 forwards;
     /* Druga animacja z opóźnieniem */
