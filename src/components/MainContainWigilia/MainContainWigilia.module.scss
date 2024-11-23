@@ -150,7 +150,7 @@
     transform: translate(-50%, 0);
     bottom: 1vw;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     /* Głębia 3D */
 }
 
@@ -159,7 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    opacity: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
@@ -176,14 +176,20 @@
     background-image: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
     background-image: linear-gradient(90deg, hsl(228.5deg 100% 50%), hsl(266.37deg 100% 50%), hsl(0deg 100% 27.39%));
 
-    animation: gradientChange 10s infinite;
 
-    .section3-text-span3 {
-        // font-size: 16px;
-        font-family: "Edu AU VIC WA NT Pre", cursive;
-    }
-
+    animation:
+        gradientChange 10s linear infinite,
+        /* Gradient działa w nieskończoność */
+        section4567-gif-animation 1s linear 26000ms 1 forwards;
+    /* Druga animacja z opóźnieniem */
 }
+
+.section3-text-span3 {
+    font-size: 26px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+
 
 @keyframes gradientChange {
     0% {
@@ -196,6 +202,17 @@
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@keyframes section4567-gif-animation {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
