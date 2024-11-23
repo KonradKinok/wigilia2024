@@ -24,7 +24,7 @@ export const MusicPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMute, setIsMute] = useState(false);
   const [progress, setProgress] = useState(0);
-
+  console.log({ sourceMusic });
   // Funkcja aktualizująca postęp
   const updateProgress = () => {
     if (audioRef.current) {

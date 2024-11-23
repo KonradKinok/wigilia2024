@@ -87,10 +87,9 @@
     /* Wycięcie tła w kształt tekstu */
     -webkit-background-clip: text;
     /* Wycięcie tła w kształt tekstu dla WebKit */
-    transition: background-image 0.5s ease-in-out;
+    // transition: background-image 0.5s ease-in-out;
     background-size: 200%;
     /* Upewnij się, że gradient jest odpowiednio duży */
-    background-image: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
     background-image: linear-gradient(90deg, hsl(0, 97%, 14%), hsl(234, 97%, 25%), hsl(295, 100%, 28%));
     /* Domyślny gradient */
 
