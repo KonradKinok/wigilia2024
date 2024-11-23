@@ -2,7 +2,10 @@ import scss from "./MainContainWigilia.module.scss";
 import Snowfall from "../Snowfall/Snowfall";
 import { useEffect, useState } from "react";
 import myPhoto from "../../images/mainWigilia/zdjecie.jpg";
-
+import gifTree from "../../images/mainWigilia/tree.gif";
+import gifBombka from "../../images/mainWigilia/ornament.gif";
+import gifGift from "../../images/mainWigilia/gift.gif";
+import gifStocking from "../../images/mainWigilia/stocking.gif";
 export const MainContainWigilia: React.FC = () => {
   const [isTimeElapsed, setIsTimeElapsed] = useState(false); // Stan zmieniający się po 20s
   const [elapsedTime, setElapsedTime] = useState(0); // Czas upływający od otwarcia strony
@@ -16,7 +19,7 @@ export const MainContainWigilia: React.FC = () => {
 
       setElapsedTime(secondsElapsed);
 
-      if (secondsElapsed >= 20) {
+      if (secondsElapsed >= 30) {
         setIsTimeElapsed(true); // Zmiana stanu po 20s
         clearInterval(interval); // Zatrzymanie licznika po osiągnięciu 20s
         console.log({ elapsedTime });
@@ -42,10 +45,61 @@ export const MainContainWigilia: React.FC = () => {
             W domach ciepło, świątecznie, choinka wiruje światłami, stosy
             prezentów piętrzą się wokół, świat wypełniony jest życzeniami.
             Wesołych Świąt Bożego Narodzenia.
+            {/* <span>W domach ciepło,</span>
+            <span>świątecznie,</span>
+            <span>choinka wiruje światłami,</span>
+            <span>stosy prezentów piętrzą się wokół,</span>
+            <span>świat wypełniony jest życzeniami.</span>
+            <span>Wesołych Świąt Bożego Narodzenia.</span> */}
           </p>
         </div>
+        <div className={scss["section3-container"]}>
+          <p className={scss["section3-text"]}>
+            <span className={scss["section3-text-span1"]}>Wesołych Świąt</span>
+            <span className={scss["section3-text-span2"]}>życzą</span>
+            <span className={scss["section3-text-span3"]}>
+              Jadzia, Adam i Konrad
+            </span>
+          </p>
+        </div>
+        <div
+          className={`${scss["section-gif-all-container"]} ${scss["section4-gif-container"]}`}
+        >
+          <img
+            className={scss["section4-gif-animation"]}
+            src={gifStocking}
+            alt="skarpeta"
+          />
+        </div>
+        <div
+          className={`${scss["section-gif-all-container"]} ${scss["section5-gif-container"]}`}
+        >
+          <img
+            className={scss["section5-gif-animation"]}
+            src={gifBombka}
+            alt="bombka"
+          />
+        </div>
+        <div
+          className={`${scss["section-gif-all-container"]} ${scss["section6-gif-container"]}`}
+        >
+          <img
+            className={scss["section6-gif-animation"]}
+            src={gifGift}
+            alt="prezent"
+          />
+        </div>
+        <div
+          className={`${scss["section-gif-all-container"]} ${scss["section7-gif-container"]}`}
+        >
+          <img
+            className={scss["section7-gif-animation"]}
+            src={gifTree}
+            alt="choinka"
+          />
+        </div>
       </div>
-      {!isTimeElapsed && <Snowfall />}
+      {isTimeElapsed && <Snowfall />}
     </div>
   );
 };
