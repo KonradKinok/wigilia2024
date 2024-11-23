@@ -6,6 +6,11 @@ import gifTree from "../../images/mainWigilia/tree.gif";
 import gifBombka from "../../images/mainWigilia/ornament.gif";
 import gifGift from "../../images/mainWigilia/gift.gif";
 import gifStocking from "../../images/mainWigilia/stocking.gif";
+import * as globalFunctions from "../../globalFunctions/functions";
+import { tableOfWishes } from "./zyczeniaTable";
+
+const zyczenia = globalFunctions.getRandomElement(tableOfWishes);
+console.log({ zyczenia });
 export const MainContainWigilia: React.FC = () => {
   const [isTimeElapsed, setIsTimeElapsed] = useState(false); // Stan zmieniający się po 20s
   const [elapsedTime, setElapsedTime] = useState(0); // Czas upływający od otwarcia strony
@@ -18,13 +23,13 @@ export const MainContainWigilia: React.FC = () => {
       const secondsElapsed = Math.floor((currentTime - startTime) / 1000);
 
       setElapsedTime(secondsElapsed);
-
+      console.log({ secondsElapsed });
       if (secondsElapsed >= 30) {
         setIsTimeElapsed(true); // Zmiana stanu po 20s
         clearInterval(interval); // Zatrzymanie licznika po osiągnięciu 20s
         console.log({ elapsedTime });
       }
-    }, 1000);
+    }, 3000);
 
     // Czyszczenie interwału przy demontażu komponentu
     return () => clearInterval(interval);
@@ -41,17 +46,7 @@ export const MainContainWigilia: React.FC = () => {
           />
         </div>
         <div className={scss["section2-container"]}>
-          <p className={scss["section2-text"]}>
-            W domach ciepło, świątecznie, choinka wiruje światłami, stosy
-            prezentów piętrzą się wokół, świat wypełniony jest życzeniami.
-            Wesołych Świąt Bożego Narodzenia.
-            {/* <span>W domach ciepło,</span>
-            <span>świątecznie,</span>
-            <span>choinka wiruje światłami,</span>
-            <span>stosy prezentów piętrzą się wokół,</span>
-            <span>świat wypełniony jest życzeniami.</span>
-            <span>Wesołych Świąt Bożego Narodzenia.</span> */}
-          </p>
+          <p className={scss["section2-text"]}>{zyczenia}</p>
         </div>
         <div className={scss["section3-container"]}>
           <p className={scss["section3-text"]}>
