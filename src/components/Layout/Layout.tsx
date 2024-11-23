@@ -22,7 +22,7 @@ export const Layout: React.FC = () => {
 
   if (windowSize !== null) {
     console.log({ windowSize });
-    if (windowSize > 645) {
+    if (windowSize > 770) {
       return (
         <h1>
           Ups! Na tym ekranie nic nie zobaczysz. Zobacz na telefonie komórkowym.

@@ -25,7 +25,7 @@
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     animation-name: section1-img1-animation1;
     animation-duration: 15000ms;
-    animation-delay: 14000ms;
+    animation-delay: 15000ms;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-direction: normal;
@@ -130,14 +130,12 @@
         transform: translateY(3vh);
     }
 
-    99% {
+
+
+    100% {
         opacity: 1;
         background-position: 0% 50%;
         transform: translateY(-100vh);
-    }
-
-    100% {
-        opacity: 0;
     }
 }
 
@@ -170,14 +168,14 @@
     transition: background-image 0.5s ease-in-out;
     background-size: 200%;
     /* Upewnij się, że gradient jest odpowiednio duży */
-    background-image: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
-    background-image: linear-gradient(90deg, hsl(228.5deg 100% 50%), hsl(266.37deg 100% 50%), hsl(0deg 100% 27.39%));
 
+    background-image: linear-gradient(90deg, hsl(228.5deg 100% 50%), hsl(266.37deg 100% 50%), hsl(0deg 100% 27.39%));
+    background-image: linear-gradient(90deg, hsl(162, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%));
 
     animation:
         gradientChange 10s linear infinite,
         /* Gradient działa w nieskończoność */
-        section4567-gif-animation 1s linear 26000ms 1 forwards;
+        section4567-gif-animation 1s linear 27000ms 1 forwards;
     /* Druga animacja z opóźnieniem */
 }
 
@@ -220,7 +218,7 @@
 
     animation-name: section4567-gif-animation;
     animation-duration: 1000ms;
-    animation-delay: 26000ms;
+    animation-delay: 27000ms;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-direction: normal;
