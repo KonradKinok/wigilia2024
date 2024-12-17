@@ -102,13 +102,21 @@ export const MusicPlayer: React.FC = () => {
           className={scss["player-btn"]}
           onClick={isPlaying ? pause : play}
         >
-          {isPlaying ? <FaPause size={24} /> : <FaPlay size={24} />}
+          {isPlaying ? (
+            <FaPause size={24} className={scss["player-icon"]} />
+          ) : (
+            <FaPlay size={24} className={scss["player-icon"]} />
+          )}
         </button>
         <button className={scss["player-btn"]} onClick={stop}>
-          <FaStop size={30} />
+          <FaStop size={30} className={scss["player-icon"]} />
         </button>
         <button className={scss["player-btn"]} onClick={toggleMute}>
-          {isMute ? <FaVolumeMute size={30} /> : <FaVolumeUp size={30} />}
+          {isMute ? (
+            <FaVolumeMute size={30} className={scss["player-icon"]} />
+          ) : (
+            <FaVolumeUp size={30} className={scss["player-icon"]} />
+          )}
         </button>
         <div className={scss["player-time"]}>
           <span>

@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     color: rgb(48 0 187);
+    color: white;
 }
 
 .player-btn {
@@ -35,7 +36,18 @@
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.2s;
+
+
 }
+
+
+
+.player-icon {
+    fill: currentColor;
+    stroke: black;
+    stroke-width: 22;
+}
+
 
 .player-time {
     color: inherit;
