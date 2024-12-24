@@ -1,7 +1,8 @@
 import scss from "./MainContainWigilia.module.scss";
 import Snowfall from "../Snowfall/Snowfall";
 import { useEffect, useState } from "react";
-import myPhoto from "../../images/mainWigilia/zdjecie.jpg";
+// import myPhoto from "../../images/mainWigilia/zdjecie.jpg";
+import myPhoto from "../../images/mainWigilia/choinka.jpg";
 import gifTree from "../../images/mainWigilia/tree.gif";
 import gifBombka from "../../images/mainWigilia/ornament.gif";
 import gifGift from "../../images/mainWigilia/gift.gif";
