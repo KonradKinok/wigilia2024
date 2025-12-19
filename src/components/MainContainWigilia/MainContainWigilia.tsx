@@ -34,6 +34,7 @@ export const MainContainWigilia: React.FC = () => {
 
     // Czyszczenie interwału przy demontażu komponentu
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -52,10 +53,8 @@ export const MainContainWigilia: React.FC = () => {
         <div className={scss["section3-container"]}>
           <p className={scss["section3-text"]}>
             <span className={scss["section3-text-span1"]}>Wesołych Świąt</span>
-            <span className={scss["section3-text-span2"]}>życzą</span>
-            <span className={scss["section3-text-span3"]}>
-              Jadzia, Adam i Konrad
-            </span>
+            <span className={scss["section3-text-span2"]}>życzy</span>
+            <span className={scss["section3-text-span3"]}>Konrad</span>
           </p>
         </div>
         <div
